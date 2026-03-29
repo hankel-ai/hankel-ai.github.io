@@ -43,7 +43,7 @@ Menus:
 params:
   title: "John Hankel"
   description: "Technical portfolio of John Hankel - Kubernetes, Cloud Infrastructure, and AI Engineering"
-  favicon: "/fav.png"
+  favicon: "/fav.svg"
 
   useBootstrapCDN: false
   mathjax: false
@@ -58,6 +58,16 @@ params:
     lineHeight: 1.5
     textAlign: left
 
+  color:
+    darkmode:
+      textColor: "#e2e8f0"
+      secondaryTextColor: "#94a3b8"
+      textLinkColor: "#60a5fa"
+      backgroundColor: "#0f172a"
+      secondaryBackgroundColor: "#1e293b"
+      primaryColor: "#60a5fa"
+      secondaryColor: "#1e293b"
+
   navbar:
     align: ms-auto
     brandName: "hankel.ai"
@@ -71,7 +81,7 @@ params:
       disableExperience: true
       disableEducation: true
       disableProjects: false
-      disableAchievements: true
+      disableAchievements: false
       disableContact: false
 
   # Hero
@@ -79,8 +89,8 @@ params:
     enable: true
     intro: "Hi, I'm"
     title: "John Hankel."
-    subtitle: "I build infrastructure and AI systems"
-    content: "A senior IT professional with 25 years of experience, focused on Kubernetes orchestration, cloud infrastructure, and AI-integrated systems. I enjoy building production systems that solve real problems."
+    subtitle: "CKA-certified Kubernetes engineer & AI developer"
+    content: "25 years in IT. I architect cloud migrations on OpenShift/EKS/GKE/AKS, build production Helm charts, and develop AI-integrated tools that solve real problems. Currently focused on Kubernetes orchestration and AI-assisted engineering."
     image: /images/hero.svg
     bottomImage:
       enable: true
@@ -101,23 +111,27 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/me.svg"
     content: |-
-      I'm a hands-on infrastructure and software engineer who has spent 25 years building, automating, and scaling systems across every layer of the stack. My current focus is on Kubernetes orchestration and AI-integrated pipelines -- I run a home K3s cluster where I design and deploy production Helm charts, and I build end-to-end AI systems that go from data ingestion through LLM processing to multi-channel delivery.
+      I've spent 25 years building and migrating enterprise infrastructure -- from managing 60+ servers across international data centers to architecting multi-year cloud migrations on Red Hat OpenShift and AWS. I hold a CKA certification and have hands-on experience with managed Kubernetes across all three major clouds.
 
-      I'm drawn to problems that sit at the intersection of infrastructure and intelligence: container orchestration with purpose-built automation, network security tools, and AI pipelines that actually run in production rather than just in notebooks.
+      Outside of work, I run a 3-node K3s cluster where I build production Helm charts, and I develop AI-powered tools using Claude Code, LLM APIs, and local models. I'm particularly interested in the intersection of container orchestration and AI -- building systems that are both well-architected and practically useful.
     skills:
       enable: true
       title: "Technologies I work with:"
       items:
-        - "Kubernetes / K3s"
-        - "Helm Charts"
+        - "Kubernetes (EKS, GKE, AKS, OpenShift)"
+        - "Helm / Terraform"
+        - "AWS / GCP / Azure"
         - "Docker"
-        - "Python"
-        - "FastAPI"
-        - "C# / .NET 8"
-        - "Claude API / Ollama"
-        - "GitHub Actions"
+        - "Python / Java"
+        - "Claude Code / GitHub Copilot"
+        - "Azure Entra ID / SAML / OAuth"
+        - "Linux (RHEL, Ubuntu)"
+        - "PostgreSQL / Oracle"
+        - "CI/CD / GitLab / GitHub Actions"
+        - "Bash / PowerShell"
+        - "FastAPI / REST"
         - "Longhorn Storage"
         - "Linux / Bash"
         - "PowerShell"
@@ -131,9 +145,19 @@ params:
   education:
     enable: false
 
-  # Achievements (disabled)
+  # Certifications
   achievements:
-    enable: false
+    enable: true
+    title: "Certifications"
+    items:
+      - title: "Certified Kubernetes Administrator (CKA)"
+        content: "Cloud Native Computing Foundation — 2024"
+      - title: "Cisco CCNA Security"
+        content: "Routing & Switching and Security — 2018"
+      - title: "Red Hat Certified Technician (RHCT)"
+        content: "Red Hat — 2010"
+      - title: "CompTIA Security+"
+        content: "CompTIA — 2010"
 
   # Projects
   projects:
