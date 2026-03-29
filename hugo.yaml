@@ -1,0 +1,248 @@
+baseURL: "https://hankel.ai"
+languageCode: "en-us"
+title: "John Hankel"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 10
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: projects
+      name: Projects
+      title: Projects
+      url: /#projects
+      weight: 1
+    - identifier: about
+      name: About
+      title: About
+      url: /#about
+      weight: 2
+    - identifier: contact
+      name: Contact
+      title: Contact
+      url: /#contact
+      weight: 3
+
+params:
+  title: "John Hankel"
+  description: "Technical portfolio of John Hankel - Kubernetes, Cloud Infrastructure, and AI Engineering"
+  favicon: "/fav.png"
+
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "hankel.ai"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: true
+      disableEducation: true
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "John Hankel."
+    subtitle: "I build infrastructure and AI systems"
+    content: "A senior IT professional with 25 years of experience, focused on Kubernetes orchestration, cloud infrastructure, and AI-integrated systems. I enjoy building production systems that solve real problems."
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "View Projects"
+      url: "#projects"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/hankel-ai
+        - icon: fa fa-envelope
+          url: mailto:john@hankel.ai
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I'm a hands-on infrastructure and software engineer who has spent 25 years building, automating, and scaling systems across every layer of the stack. My current focus is on Kubernetes orchestration and AI-integrated pipelines -- I run a home K3s cluster where I design and deploy production Helm charts, and I build end-to-end AI systems that go from data ingestion through LLM processing to multi-channel delivery.
+
+      I'm drawn to problems that sit at the intersection of infrastructure and intelligence: container orchestration with purpose-built automation, network security tools, and AI pipelines that actually run in production rather than just in notebooks.
+    skills:
+      enable: true
+      title: "Technologies I work with:"
+      items:
+        - "Kubernetes / K3s"
+        - "Helm Charts"
+        - "Docker"
+        - "Python"
+        - "FastAPI"
+        - "C# / .NET 8"
+        - "Claude API / Ollama"
+        - "GitHub Actions"
+        - "Longhorn Storage"
+        - "Linux / Bash"
+        - "PowerShell"
+        - "iptables / Networking"
+
+  # Experience (disabled - not a resume site)
+  experience:
+    enable: false
+
+  # Education (disabled - not a resume site)
+  education:
+    enable: false
+
+  # Achievements (disabled)
+  achievements:
+    enable: false
+
+  # Projects
+  projects:
+    enable: true
+    title: "Projects"
+    items:
+      - title: "K3s Media Stack"
+        content: "Production Helm chart orchestrating 7 containers with VPN-tunneled networking, Longhorn persistent storage, event-driven media offload via rclone, and automated infrastructure backups. Deployed on a 3-node K3s cluster."
+        image: /images/projects/k3s-media-stack.png
+        badges:
+          - "Kubernetes"
+          - "Helm"
+          - "Docker"
+          - "Longhorn"
+          - "rclone"
+          - "PowerShell"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/hankel-ai/k3s-media-stack
+
+      - title: "AI Podcast Pipeline"
+        content: "Automated AI news aggregation system that scrapes 13+ sources daily, generates podcast scripts via LLM (Claude API or local Ollama), synthesizes audio with neural TTS, and delivers to Telegram and Discord. Features async concurrent fetching, deduplication, and graceful fallback across generation modes."
+        image: /images/projects/ai-podcast.png
+        badges:
+          - "Python"
+          - "Claude API"
+          - "Ollama"
+          - "Edge TTS"
+          - "Telegram Bot"
+          - "Async"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/hankel-ai/ai-podcast
+
+      - title: "NetGuard"
+        content: "Network access control system using ARP/NDP cache poisoning for agentless device management. Features a FastAPI backend with per-device scheduling, real-time bandwidth monitoring, Pi-hole DNS integration, and an auto-restoring safety mechanism. Dual-stack IPv4/IPv6 support."
+        image: /images/projects/netguard.png
+        badges:
+          - "Python"
+          - "FastAPI"
+          - "Scapy"
+          - "Docker"
+          - "iptables"
+          - "Raspberry Pi"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/hankel-ai/netguard
+
+      - title: "LLM API Bridge"
+        content: "Protocol-translating proxy that bridges Anthropic and OpenAI API formats, enabling any AI coding tool to use alternative models. Implements bidirectional streaming SSE, full tool calling translation between incompatible schemas, and transparent web search. Zero dependencies -- Python stdlib only."
+        image: /images/projects/llm-bridge.png
+        badges:
+          - "Python"
+          - "SSE Streaming"
+          - "API Design"
+          - "Zero Dependencies"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/hankel-ai/llm-bridge
+
+      - title: "Claude Usage Monitor"
+        content: "Real-time Windows desktop widget for monitoring Claude AI rate limits. Features animated utilization meters with color-coded thresholds, OAuth token integration, configurable polling, and single-file deployment via .NET 8 self-contained publish."
+        image: /images/projects/claude-usage-monitor.png
+        badges:
+          - "C#"
+          - ".NET 8"
+          - "WPF"
+          - "XAML"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/hankel-ai/claude-usage-monitor
+
+  # Contact
+  contact:
+    enable: true
+    content: "Feel free to reach out if you'd like to discuss Kubernetes, AI systems, or infrastructure engineering."
+    btnName: Email me
+    btnLink: mailto:john@hankel.ai
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/hankel-ai
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
