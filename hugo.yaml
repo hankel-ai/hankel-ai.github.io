@@ -164,19 +164,17 @@ params:
     enable: true
     title: "Projects"
     items:
-      - title: "K3s Media Stack"
-        content: "Production Helm chart orchestrating 7 containers with VPN-tunneled networking, Longhorn persistent storage, event-driven media offload via rclone, and automated infrastructure backups. Deployed on a 3-node K3s cluster."
-        image: /images/projects/k3s-media-stack.png
+      - title: "AI Commit"
+        content: "AI-powered git commit message generator using local Ollama models. Includes a CLI for single-repo workflows and a Dear PyGui GUI monitor that auto-scans directories for repos, generates conventional commit messages from diffs, and supports accept/regenerate/edit flows with system tray integration."
+        image: /images/projects/ai-commit.png
         badges:
-          - "Kubernetes"
-          - "Helm"
-          - "Docker"
-          - "Longhorn"
-          - "rclone"
-          - "PowerShell"
+          - "Python"
+          - "Ollama"
+          - "Dear PyGui"
+          - "Git"
         links:
           - icon: fab fa-github
-            url: https://github.com/hankel-ai/k3s-media-stack
+            url: https://github.com/hankel-ai/ai-commit
 
       - title: "AI Podcast Pipeline"
         content: "Automated AI news aggregation system that scrapes 13+ sources daily, generates podcast scripts via LLM (Claude API or local Ollama), synthesizes audio with neural TTS, and delivers to Telegram and Discord. Features async concurrent fetching, deduplication, and graceful fallback across generation modes."
