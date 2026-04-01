@@ -131,9 +131,8 @@ params:
         - "Bash / PowerShell"
         - "PostgreSQL / Oracle"
         - "CI/CD / GitLab / GitHub Actions"
-        - "FastAPI / REST"
+        - "REST APIs"
         - "OpenText Documentum"
-        - "iptables / Networking"
 
   # Experience (disabled - not a resume site)
   experience:
