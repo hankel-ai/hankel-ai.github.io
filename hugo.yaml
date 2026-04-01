@@ -111,7 +111,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.svg"
+    image: "/images/me.jpg"
     content: |-
       I've spent 25 years building and migrating enterprise infrastructure -- from managing 60+ servers across international data centers to architecting multi-year cloud migrations on Red Hat OpenShift and AWS. I hold a CKA certification and have hands-on experience with managed Kubernetes across all three major clouds.
 
@@ -128,13 +128,11 @@ params:
         - "Claude Code / GitHub Copilot"
         - "Azure Entra ID / SAML / OAuth"
         - "Linux (RHEL, Ubuntu)"
+        - "Bash / PowerShell"
         - "PostgreSQL / Oracle"
         - "CI/CD / GitLab / GitHub Actions"
-        - "Bash / PowerShell"
         - "FastAPI / REST"
-        - "Longhorn Storage"
-        - "Linux / Bash"
-        - "PowerShell"
+        - "OpenText Documentum"
         - "iptables / Networking"
 
   # Experience (disabled - not a resume site)
@@ -152,12 +150,16 @@ params:
     items:
       - title: "Certified Kubernetes Administrator (CKA)"
         content: "Cloud Native Computing Foundation — 2024"
-      - title: "Cisco CCNA Security"
-        content: "Routing & Switching and Security — 2018"
+      - title: "Cisco CCNA"
+        content: "Security, Routing & Switching"
       - title: "Red Hat Certified Technician (RHCT)"
-        content: "Red Hat — 2010"
-      - title: "CompTIA Security+"
-        content: "CompTIA — 2010"
+        content: "Red Hat"
+      - title: "Microsoft MCITP, MCTS, MCP"
+        content: "Enterprise Administrator, Windows Server 2008"
+      - title: "CompTIA Security+, Project+, Network+, A+"
+        content: "CompTIA"
+      - title: "...and more"
+        content: "OpenText Documentum, CIW Database Design & Professional"
 
   # Projects
   projects:
@@ -177,7 +179,7 @@ params:
             url: https://github.com/hankel-ai/ai-commit
 
       - title: "AI Podcast Pipeline"
-        content: "Automated AI news aggregation system that scrapes 13+ sources daily, generates podcast scripts via LLM (Claude API or local Ollama), synthesizes audio with neural TTS, and delivers to Telegram and Discord. Features async concurrent fetching, deduplication, and graceful fallback across generation modes."
+        content: "Automated AI news aggregation system that scrapes multiple sources daily, generates podcast scripts via LLM (Claude API or local Ollama), synthesizes audio with neural TTS, and delivers to Telegram and Discord. Features async concurrent fetching, deduplication, and graceful fallback across generation modes."
         image: /images/projects/ai-podcast.png
         badges:
           - "Python"
@@ -204,17 +206,19 @@ params:
           - icon: fab fa-github
             url: https://github.com/hankel-ai/netguard
 
-      - title: "LLM API Bridge"
-        content: "Protocol-translating proxy that bridges Anthropic and OpenAI API formats, enabling any AI coding tool to use alternative models. Implements bidirectional streaming SSE, full tool calling translation between incompatible schemas, and transparent web search. Zero dependencies -- Python stdlib only."
-        image: /images/projects/llm-bridge.png
+      - title: "Container Image Compare"
+        content: "Full-stack web application for comparing Docker/OCI container images. Dual-pane interface for diffing metadata, environment variables, filesystems, and file contents between any two images. Includes Helm chart for Kubernetes deployment, Docker Registry API v2 integration, encrypted credential storage, and E2E testing with Puppeteer."
+        image: /images/projects/container-image-compare.png
         badges:
-          - "Python"
-          - "SSE Streaming"
-          - "API Design"
-          - "Zero Dependencies"
+          - "TypeScript"
+          - "React"
+          - "Node.js"
+          - "Docker"
+          - "Helm"
+          - "Kubernetes"
         links:
           - icon: fab fa-github
-            url: https://github.com/hankel-ai/llm-bridge
+            url: https://github.com/hankel-ai/container-image-compare
 
       - title: "Claude Usage Monitor"
         content: "Real-time Windows desktop widget for monitoring Claude AI rate limits. Features animated utilization meters with color-coded thresholds, OAuth token integration, configurable polling, and single-file deployment via .NET 8 self-contained publish."
