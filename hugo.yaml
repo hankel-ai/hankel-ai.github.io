@@ -90,7 +90,7 @@ params:
     intro: "Hi, I'm"
     title: "John Hankel."
     subtitle: "CKA-certified Kubernetes engineer & AI developer"
-    content: "25 years in IT. I architect cloud migrations on OpenShift/EKS/GKE/AKS, build production Helm charts, and develop AI-integrated tools that solve real problems. Currently focused on Kubernetes orchestration and AI-assisted engineering."
+    content: "25 years in IT. I architect cloud migrations on OpenShift/EKS/GKE/AKS and develop AI-integrated tools that solve real problems. Currently focused on Kubernetes orchestration and AI-assisted engineering."
     image: /images/hero.svg
     bottomImage:
       enable: true
@@ -115,7 +115,7 @@ params:
     content: |-
       I've spent 25 years building and migrating enterprise infrastructure -- from managing 60+ servers across international data centers to architecting multi-year cloud migrations on Red Hat OpenShift and AWS. I hold a CKA certification and have hands-on experience with managed Kubernetes across all three major clouds.
 
-      Outside of work, I run a 3-node K3s cluster where I build production Helm charts, and I develop AI-powered tools using Claude Code, LLM APIs, and local models. I'm particularly interested in the intersection of container orchestration and AI -- building systems that are both well-architected and practically useful.
+      Outside of work, I develop AI-powered tools using Claude Code, LLM APIs, and local models. I'm particularly interested in the intersection of container orchestration and AI -- building systems that are both well-architected and practically useful.
     skills:
       enable: true
       title: "Technologies I work with:"
