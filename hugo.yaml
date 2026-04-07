@@ -231,6 +231,19 @@ params:
           - icon: fab fa-github
             url: https://github.com/hankel-ai/claude-usage-monitor
 
+      - title: "Agent Model Compare"
+        content: "Multi-model agent orchestrator that benchmarks AI models head-to-head by giving them identical tasks in isolated workspaces. Each model runs as a full interactive Claude Code session in its own terminal pane (Windows Terminal on Windows, tmux on Linux/macOS), with file-based progress tracking, automated test/launch validation, and side-by-side comparison reports. Supports Claude models directly and any LiteLLM-routed model."
+        image: /images/projects/agent-model-compare.png
+        badges:
+          - "Python"
+          - "Claude Code"
+          - "LiteLLM"
+          - "Windows Terminal"
+          - "tmux"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/hankel-ai/agent-model-compare
+
   # Contact
   contact:
     enable: true
