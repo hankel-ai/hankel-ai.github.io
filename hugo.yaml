@@ -201,9 +201,6 @@ params:
           - "Docker"
           - "iptables"
           - "Raspberry Pi"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/hankel-ai/netguard
 
       - title: "Comptainer"
         content: "Full-stack web application for comparing Docker/OCI container images. Dual-pane interface for diffing metadata, environment variables, filesystems, and file contents between any two images. Includes Helm chart for Kubernetes deployment, Docker Registry API v2 integration, encrypted credential storage, and E2E testing with Puppeteer."
@@ -215,9 +212,6 @@ params:
           - "Docker"
           - "Helm"
           - "Kubernetes"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/hankel-ai/comptainer
 
       - title: "Claude Usage Monitor"
         content: "Real-time Windows desktop widget for monitoring Claude AI rate limits. Features animated utilization meters with color-coded thresholds, OAuth token integration, configurable polling, and single-file deployment via .NET 8 self-contained publish."
